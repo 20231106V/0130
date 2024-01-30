@@ -122,6 +122,28 @@
         </section>
     </main>
 
+<script>
+        // 图片路径数组
+        var imagePaths = [
+            './image/S__84672623.jpg',
+            './image/1010-BOO15743 V.jpg',
+            './image/022511613 T.jpg',
+            './image/02276312.jpg',
+            './image/022512216.jpg',
+            // 添加其他图片路径
+        ];
+    
+        // 预加载图片
+        function preloadImages() {
+            for (var i = 0; i < imagePaths.length; i++) {
+                var img = new Image();
+                img.src = imagePaths[i];
+            }
+        }
+    
+        // 调用预加载函数
+        preloadImages();
+    </script>
 
 </body>
 
