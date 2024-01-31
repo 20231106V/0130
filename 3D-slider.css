@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'ARCK';
-	src: url('./Archivo_Black/ArchivoBlack-Regular.ttf');
+	src: url('./Days_One/DaysOne-Regular.ttf');
 }
 @-webkit-keyframes spin {
     from {-webkit-transform:rotateY(0); }
