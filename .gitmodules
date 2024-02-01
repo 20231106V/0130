@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/20231106V/main.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[user]
+	name = “20231106V”
+	email = “hly.460320@gmail.com”
+[submodule "20231106V.github.io"]
+    path = 20231106V.github.io
+    url = https://github.com/20231106V/20231106V.github.io.git`
