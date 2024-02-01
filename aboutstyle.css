@@ -1,0 +1,241 @@
+/* boostrape和eric meyer reset需要二選一 */
+@charset"UTF-8";
+@font-face {
+	font-family: 'ARCK';
+	src: url('./Archivo_Black/ArchivoBlack-Regular.ttf');
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 網頁常用設定a/img */
+a {
+	display: block;
+	text-decoration:none;
+    
+}
+.content a{
+    text-decoration:underline;
+}
+img {
+	display: block;
+    max-width: 80vw; /* 图片的最大宽度为其容器的100% */
+    max-height: 100vh; /* 图片的最大高度为其容器的100% */
+    /* height: auto; */
+    /* width: 100%; */
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+*{
+    cursor:cell;
+}
+
+
+body {
+	line-height: 1;
+    margin: 0;
+    /* overflow: hidden; */
+    background: linear-gradient(to right, rgb(231, 231, 231), #ffffff);
+
+    font-family:
+	/*西文*/ -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+	/*中文*/ "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+}
+.container{
+    /* border: 3px solid red; */
+    color: rgb(236, 4, 4);
+    margin: 20px;
+    font-family: 'ARCK';
+}
+.container video{
+    position: absolute;
+	top: 0;
+	left: 0;
+    z-index: -1;
+	/* 
+    背景常用-1讓元素往後退 */
+
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.header{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    height: 100%;
+    width: 127px;
+    cursor:cell;
+    
+
+    /* display: block; */
+    /* max-height: 100%;
+    border: 3px solid blue; 
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden; 
+    transform: rotate(270deg); 
+    transform-origin: center right; */
+}
+#V{
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: rotate(-270deg);
+    margin-top: 92px;
+    
+    /* margin: 460%; 調整上下文字之間的間距 */
+    /* margin-top: 90px;
+    transform: rotate(-270deg); */
+
+    /* transform-origin: top right;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: large; */
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-270deg);
+    margin-bottom: 60px;
+    
+
+    /* transform-origin: top right;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    font-size: smaller; */
+}
+#sound{
+    position: fixed;
+    bottom: -430px;
+    right: 22px;
+    margin-bottom: 600px;
+    border: 3px solid red;
+    border-radius: 10px;
+    border-width: 1px 15px;
+    /* border-width: 3px ; */
+    border-top: 10px;
+    padding-inline: 2px;
+
+}
+.nav{
+    /* float: right; */ 
+    font-size: 320%; 
+    line-height: 1;
+    margin-bottom: 1;
+}
+a{
+    color: rgb(236, 4, 4);
+}
+.PIC{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: -1;
+    /* overflow: hidden; */
+    
+}
+#about{
+    display: flex;
+
+}
+.content{
+    width: 50%;
+    position: fixed;
+    top: 25%;
+    right:0;
+    margin: 10px;
+    font-size: x-small;
+    margin-right: 5%;
+    /* border: 5px solid red; */
+}
+.contact{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20%;
+    
+}
+.contact a {
+    transition: color 0.3s ease;
+    transition: color 0.3s ease-out
+}
+
+.contact a:hover{
+    background: linear-gradient(to right, rgb(165, 163, 163), grey);
+    -webkit-background-clip: text; /* 將文字內容裁剪為背景 */
+    color: transparent; /* 將文字設為透明，只顯示背景 */
+   
+}
+.commission{
+    margin: 30px;
+    /* border: 5px solid red; */
+}
+.stills{
+    margin: 30px;
+    /* border: 5px solid red; */
+}
+.exhibition{
+    margin: 30px;
+    padding-right: 100px;
+    /* border: 5px solid red; */
+
+}
