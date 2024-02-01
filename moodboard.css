@@ -1,0 +1,71 @@
+
+.moodboard{
+    transform-style: preserve-3d;
+    transform: translateZ(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 55%;
+    height: auto;  
+    margin-left: 20%; 
+    box-shadow: 3px 3px 8px rgba(.1, 0, 0, .1);
+    /* border: 1px dashed red; */
+    padding: 15px;
+    /* rotate: calc(-2deg); */
+
+}
+video{
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;   
+}
+.pic1{
+    transform-style: preserve-3d;
+    justify-content: flex-end;
+    width: 20%;
+    height: auto;   
+    
+   
+}
+.pic2{
+    transform-style: preserve-3d;
+    transform: translateZ(20px);
+    width: 20%;
+    height: auto;
+    
+
+}
+.pic3{
+    transform-style: preserve-3d;
+    width: 20%;
+    height: auto;
+}
+.pic4{
+    transform-style: preserve-3d;
+    transform: translateZ(40px);
+    width: 20%;
+    height: auto;
+    
+  
+}
+.pic5{
+    transform-style: preserve-3d;
+    width: 20%;
+    height: auto;
+    
+}
+.a{
+    padding-left: 25px;
+    
+}
+.b{
+    padding-right: 30px;
+}
+.c{
+    padding-top: 20px;
+    
+}
+.d{
+    padding-bottom: 20px;
+}
+    
