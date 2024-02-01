@@ -1,0 +1,294 @@
+/* boostrape和eric meyer reset需要二選一 */
+@charset"UTF-8";
+@font-face {
+	font-family: 'ARCK';
+	src: url('./webfont/Archivo_Black/ArchivoBlack-Regular.ttf');
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 網頁常用設定a/img */
+a {
+	display: block;
+	text-decoration: none;
+}
+img {
+	display: block;
+    /* width: 100%;
+    height: 100%; */  
+    object-fit: cover;
+    
+}
+section img {
+	display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+}
+
+*{
+    cursor:cell;
+}
+
+body {
+	line-height: 1;
+    margin: 0;
+    overflow: visible;
+    /* background: scroll; */
+    background: linear-gradient(to right, rgb(231, 231, 231), #ffffff);
+
+    font-family:
+	/*西文*/ -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+	/*中文*/ "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+}
+.container{
+    /* border: 3px solid red; */
+    color: rgb(236, 4, 4);
+    margin: 20px;
+    font-family: 'ARCK';
+}
+.PIC{
+    /* position: absolute;
+	top: 0;
+	left: 0;
+    z-index: -1; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 127px;
+    cursor:cell;
+
+}
+#V{
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: rotate(-270deg);
+    margin-top: 92px;
+    
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-270deg);
+    margin-bottom: 60px;
+    
+
+    /* transform-origin: top right;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    font-size: smaller; */
+}
+#sound{
+    position: fixed;
+    bottom: -430px;
+    right: 22px;
+    margin-bottom: 600px;
+    border: 3px solid red;
+    border-radius: 10px;
+    border-width: 1px 15px;
+    /* border-width: 3px ; */
+    border-top: 10px;
+    padding-inline: 2px;
+}
+.nav{
+    /* float: right; */ 
+    font-size: 300%; 
+}
+a{
+    color: rgb(236, 4, 4);
+}
+main{
+    margin-top: 400px;
+}
+
+section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* border: 1px solid red; */
+    height: 100vh;
+  }
+
+  .project-box {
+
+    width: 100vw;
+    height: 100vh;
+    max-height: 600px;
+    display: flex;
+
+
+  }
+
+  /* .project-pic{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+  } */
+  
+  .project-text1, .project-text3, .project-text5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .1);
+    /* border: 1px solid red; */
+  }
+  .project-text1 h3, .project-text3 h3, .project-text5 h3{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 312px;
+    margin: 30px;
+    color: red;
+  }
+  .project-text1 p, .project-text3 p, .project-text5 p{
+    display: block;
+    margin-left: auto;
+    padding-inline:50px;
+    margin-top: 30px;
+    color: red;
+    font-weight: 400;
+    /* overflow: hidden; */
+  }
+  .horizontal-line1, .horizontal-line3, .horizontal-line5{
+    display: block;
+    margin-left: auto;
+    border-top:  1px solid red;
+    width: 400px;
+  }
+  .project-text2, .project-text4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: -3px -3px 8px rgba(0, 0, 0, .1);
+    /* border: 1px solid red; */
+    /* padding-right: 100px; */
+  }
+  .project-text2 h3, .project-text4 h3{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 312px;
+    margin: 30px;
+    color: red;
+  }
+  .project-text2 p, .project-text4 p{
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    padding-inline:50px;
+    margin-top: 30px;
+    color: red;
+    font-weight: 400;
+    /* overflow: hidden; */
+  }
+  .horizontal-line2, .horizontal-line4{
+    display: block;
+    margin-left: auto;
+    border-top:  1px solid red;
+    width: 400px;
+  }
+
+.playButton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  font-size: 20px;
+  border-radius: 30px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.playButton::before {
+  content: "\25B6";
+  font-size: 60px;
+  margin: 0; /* 調整箭頭的 margin，使其居中 */
+  position: absolute; /* 將箭頭設置為絕對定位，相對於 .project-box */
+  top: 50%; /* 上邊距為 50% */
+  left: 50%; /* 左邊距為 50% */
+  transform: translate(-50%, -50%); /* 使箭頭在中央 */
+  color: darkred;
+  
+}
+
+.video{
+ display: flex;
+ width: 100vw;
+ height: auto;
+ object-fit: cover;
+
+ max-width: 100%;
+ margin: 10px;
+
+ position: relative;
+ z-index: -1;
+
+}
+video{
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+  
+}
