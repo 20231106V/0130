@@ -24,7 +24,25 @@
             <li><a href="about.html">about.</a></li>
         </ul>
     </div>
-    <video src="./video/final.mp4" autoplay muted loop></video>
+    <video src="./video/final.mp4" autoplay muted loop id="video1"></video>
    </div>
+
+
+   <script>
+    // 使用 JavaScript 預先載入影片
+    function preloadVideo(videoId) {
+        var video = document.getElementById(videoId);
+        if (video) {
+            video.preload = "auto";
+            video.load();
+        }
+    }
+
+    // 預先載入指定的影片
+    preloadVideo("video1");
+</script>
+
+
+
 </body>
 </html>
