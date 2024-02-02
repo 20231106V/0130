@@ -10,6 +10,16 @@
 </head>
 
 <body>
+
+    <img src="./image/1010-BOO15761 T.jpg" alt="Preloaded Image 1" style="display: none;">
+    <img src="./image/022511613 T.jpg" alt="Preloaded Image 2" style="display: none;">
+    <img src="./image/022512216.jpg" alt="Preloaded Image 3" style="display: none;">
+    <img src="./image/首IMG_7809.jpg" alt="Preloaded Image 4" style="display: none;">
+    <img src="./image/02276312.jpg" alt="Preloaded Image 5" style="display: none;">
+    <img src="./image/1010 BOO0181 1.JPGg" alt="Preloaded Image 6" style="display: none;">
+    <img src="./image/1010-BOO15710 V.jpg" alt="Preloaded Image 7" style="display: none;">
+    <img src="./image/S__84672617.jpg" alt="Preloaded Image 8" style="display: none;">
+
     <header class="topbar">
         <div class="container">
 
@@ -46,83 +56,8 @@
 
         </div>
     </header>
-    <!-- <main>
-        
-        <section class="project1">
-            <div class="project-box">
-                <article class="project-text1">
-                    <h3>Project1</h3>
-                    <div class="horizontal-line1"></div>
-                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br>Saepe consequatur harum pariatur <br>culpa corrupti. Provident possimus animi odit fuga<br> repellendus consequuntur, eius<br> voluptatem quasi doloremque enim <br>illum laudantium, culpa aliquid.</p>
-                </article>
-                <figure class="project-pic">
-                    <img src="./image/S__84672623.jpg" alt="">
-                </figure>
-            </div>
-        </section>
 
-
-        <section class="project2">
-            <div class="project-box">
-                <figure class="project-pic">
-                    <img src="./image/1010-BOO15743 V.jpg" alt="">
-                </figure>
-                <article class="project-text2">
-                    <h3>Project2</h3>
-                    <div class="horizontal-line2"></div>
-                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br>Saepe consequatur harum pariatur <br>culpa corrupti. Provident possimus animi odit fuga<br> repellendus consequuntur, eius<br> voluptatem quasi doloremque enim <br>illum laudantium, culpa aliquid.</p>
-                </article>
-               
-            </div>
-        </section>
-
-
-        <section class="project3">
-            <div class="project-box">
-                <article class="project-text3">
-                    <h3>Project3</h3>
-                    <div class="horizontal-line3"></div>
-                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br>Saepe consequatur harum pariatur <br>culpa corrupti. Provident possimus animi odit fuga<br> repellendus consequuntur, eius<br> voluptatem quasi doloremque enim <br>illum laudantium, culpa aliquid.</p>
-                </article>
-                <figure class="project-pic">
-                    <img src="./image/022511613 T.jpg" alt="">
-                </figure>
-            </div>
-        </section>
-
-
-        <section class="project4">
-            <div class="project-box">
-                <figure class="project-pic">
-                    <img src="./image/02276312.jpg" alt="">
-                </figure>
-                <article class="project-text4">
-                    <h3>Project4</h3>
-                    <div class="horizontal-line4"></div>
-                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br>Saepe consequatur harum pariatur <br>culpa corrupti. Provident possimus animi odit fuga<br> repellendus consequuntur, eius<br> voluptatem quasi doloremque enim <br>illum laudantium, culpa aliquid.</p>
-                </article>
-               
-            </div>
-        </section>
-
-        <section class="project5">
-            <div class="project-box">
-                
-                <article class="project-text5">
-                    <h3>Project5</h3>
-                    <div class="horizontal-line5"></div>
-                    <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br>Saepe consequatur harum pariatur <br>culpa corrupti. Provident possimus animi odit fuga<br> repellendus consequuntur, eius<br> voluptatem quasi doloremque enim <br>illum laudantium, culpa aliquid.</p>
-                </article>
-            
-                <figure class="project-pic">
-                    <img src="./image/022512216.jpg" alt="">
-                </figure>
-            
-            </div>
-        </section>
-    </main> -->
-
-<script>
+<!-- <script>
         // 图片路径数组
         var imagePaths = [
             './image/S__84672623.jpg',
@@ -143,7 +78,33 @@
     
         // 调用预加载函数
         preloadImages();
-    </script>
+    </script> -->
+
+<script>
+    // 使用 JavaScript 預先載入多張圖片
+    var imagesToPreload = [
+        "./image/1010-BOO15761 T.jpg",
+        "./image/022511613 T.jpg",
+        "./image/022512216.jpg",
+        "./image/首IMG_7809.jpg",
+        "./image/02276312.jpg",
+        "./image/1010 BOO0181 1.JPG",
+        "./image/1010-BOO15710 V.jpg",
+        "./image/S__84672617.jpg",
+    ];
+
+    imagesToPreload.forEach(function(imageSrc) {
+        var img = new Image();
+        img.src = imageSrc;
+
+        // 如果需要在圖片載入完成後執行一些操作，可以使用以下代碼
+        img.onload = function() {
+            console.log("Image preloaded: " + imageSrc);
+            // 在這裡執行你的其他操作
+        };
+    });
+</script>
+
 
 </body>
 
