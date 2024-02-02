@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="./motion.css">
 </head>
 <body>
+
+    <img src="./motion/screenshot/1.png" alt="Preloaded Image 1" style="display: none;">
+    <img src="./motion/screenshot/2.png" alt="Preloaded Image 2" style="display: none;">
+    <img src="./motion/screenshot/3.png" alt="Preloaded Image 3" style="display: none;">
+    <img src="./motion/AE screenshot/1.png" alt="Preloaded Image 4" style="display: none;">
+    <img src="./motion/AE screenshot/2.png" alt="Preloaded Image 5" style="display: none;">
+    <img src="./motion/AE screenshot/3.png" alt="Preloaded Image 6" style="display: none;">
+    <img src="./motion/AE screenshot/4.png" alt="Preloaded Image 7" style="display: none;">
+    <img src="./motion/AE screenshot/5.png" alt="Preloaded Image 8" style="display: none;">
+
    <div class="container">
 
     <div class="header">
@@ -39,7 +49,7 @@
     </div>
 
     <div class="video1">
-        <video src="./motion/C4D.mov" loop autoplay muted></video>
+        <video preload="auto" src="./motion/C4D.mov" loop autoplay muted></video>
     </div>
     
    </section>
@@ -49,7 +59,7 @@
 
     <div class="content2">
         <div class="video2">
-            <video src="./motion/AEfinal.mp4" loop autoplay muted></video>
+            <video preload="auto" src="./motion/AEfinal.mp4" loop autoplay muted></video>
         </div>
         <div class="screenshot">
         <div class="img2">
@@ -62,12 +72,37 @@
             <img src="./motion/AE screenshot/5.png" alt="">
         </div>
         </div>
+    </div>       
     </div>
-        
-    </div>
-
-
-    
    </section>
+
+   <script>
+    // 使用 JavaScript 預先載入多張圖片
+    var imagesToPreload = [
+        "./motion/AE screenshot/1.png",
+        "./motion/AE screenshot/2.png",
+        "./motion/AE screenshot/3.png",
+        "./motion/AE screenshot/4.png",
+        "./motion/AE screenshot/5.png",
+        "./motion/screenshot/1.png",
+        "./motion/screenshot/2.png",
+        "./motion/screenshot/3.png",
+    ];
+
+    imagesToPreload.forEach(function(imageSrc) {
+        var img = new Image();
+        img.src = imageSrc;
+
+        // 如果需要在圖片載入完成後執行一些操作，可以使用以下代碼
+        img.onload = function() {
+            console.log("Image preloaded: " + imageSrc);
+            // 在這裡執行你的其他操作
+        };
+    });
+</script>
+
+
+
+
 </body>
 </html>
