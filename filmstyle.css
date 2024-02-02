@@ -292,3 +292,9 @@ video{
   max-width: 100%;
   
 }
+iframe{
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
