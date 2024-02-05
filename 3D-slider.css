@@ -31,7 +31,8 @@
     /* display: table-cell; */
     vertical-align: middle;
   
-    /* perspective: 1200px; */
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0); /* 透明背景色 */
   
    }
 
