@@ -48,7 +48,7 @@ table {
 
 /* 網頁常用設定a/img */
 a {
-	display: block;
+	/* display: block; */
 	text-decoration:none;
     
 }
@@ -103,7 +103,7 @@ body {
 	width: 100%;
 	height: 100%;
 }
-.header{
+/* .header{
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -111,28 +111,39 @@ body {
     border-radius: 5px;
     padding: 10px;
     display: flex;
-    /* flex-direction: column;
-    align-items: center; */
+    .flex-direction: column;
+    .align-items: center;
     height: 100%;
     width: 127px;
     cursor:cell;
+    background-color: #000000;
     
+} */
 
-    /* display: block; */
-    /* max-height: 100%;
-    border: 3px solid blue; 
+.header{
+    position: fixed;
+    bottom: .1px;
+    right: .1px;
+    border: none;
+    /* border-radius: 5px; */
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    overflow: hidden; 
-    transform: rotate(270deg); 
-    transform-origin: center right; */
+    height: 100%;
+    width: 127px;
+    cursor:cell;
+    background-color: #000000;
+   
+    
 }
+
+
 #V{
     position: fixed;
     top: 0;
     right: 0;
     transform: rotate(-270deg);
     margin-top: 92px;
+    
     
     /* margin: 460%; 調整上下文字之間的間距 */
     /* margin-top: 90px;
@@ -148,7 +159,7 @@ body {
 #footer{
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 10px;
     transform: rotate(-270deg);
     margin-bottom: 60px;
     
@@ -239,7 +250,3 @@ a{
     /* border: 5px solid red; */
 
 }
-
-*{
-    background-color: #000000;
-  }

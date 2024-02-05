@@ -5,11 +5,10 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 55%;
+    /* width: 55%; */
     height: auto;  
-    margin-left: 20%; 
+    /* margin-left: 20%;  */
     box-shadow: 3px 3px 8px rgba(.1, 0, 0, .1);
-    /* border: 1px dashed red; */
     padding: 15px;
     /* rotate: calc(-2deg); */
 
@@ -72,3 +71,31 @@ video{
 *{
     background-color: #000000;
   }
+  .collumn1{
+   width: 75%;
+   height: auto;
+   margin-left: 25%;
+
+  }
+  .collumn2{
+    width: 75%;
+    height: auto;
+    margin-left: 20%;
+   }
+   .collumn3{
+    width: 75%;
+    height: auto;
+   }
+   .collumn4{
+    width: 75%;
+    height: auto;
+    margin-right: 50%;
+   }
+   .collumn5{
+    width: 75%;
+    height: auto;
+    
+   }
+*{
+    background-image: url();
+}

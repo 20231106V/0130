@@ -48,7 +48,7 @@ table {
 
 /* 網頁常用設定a/img */
 a {
-	display: block;
+	/* display: block; */
 	text-decoration: none;
 }
 img {
@@ -81,9 +81,9 @@ body {
 	/*中文*/ "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
 }
 .container{
-    /* border: 3px solid red; */
     color: rgb(236, 4, 4);
-    margin: 20px;
+    /* margin: 20px; */
+    margin-top: 20px;
     font-family: 'ARCK';
 }
 .container video{
@@ -175,8 +175,7 @@ body {
 }
 a{
     color: rgb(236, 4, 4);
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
-*{
-    background-color: #000000;
-  }

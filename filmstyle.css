@@ -48,7 +48,7 @@ table {
 
 /* 網頁常用設定a/img */
 a {
-	display: block;
+	/* display: block; */
 	text-decoration: none;
 }
 img {
@@ -83,7 +83,9 @@ body {
 .container{
     /* border: 3px solid red; */
     color: rgb(236, 4, 4);
-    margin: 20px;
+    /* margin: 20px; */
+    margin-left: 20px;
+    margin-top: 20px;
     font-family: 'ARCK';
 }
 .PIC{
@@ -154,7 +156,7 @@ a{
     color: rgb(236, 4, 4);
 }
 main{
-    margin-top: 400px;
+    /* margin-top: 400px; */
 }
 
 section {
