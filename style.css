@@ -161,10 +161,10 @@ body {
     border: 3px solid red;
     border-radius: 10px;
     border-width: 1px 15px;
-    /* border-width: 3px ; */
     border-top: 10px;
     padding-inline: 2px;
 }
+
 .nav{
     /* float: right; */ 
     font-size: 300%; 
