@@ -68,4 +68,7 @@ video{
 .d{
     padding-bottom: 20px;
 }
-    
+
+*{
+    background-color: #000000;
+  }

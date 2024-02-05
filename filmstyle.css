@@ -298,3 +298,6 @@ iframe{
   object-fit: cover;
   max-width: 100%;
 }
+*{
+  background-color: #000000;
+}

@@ -59,6 +59,7 @@ a {
 
 *{
     cursor:cell;
+    
 }
 
 
@@ -153,3 +154,7 @@ body {
     /* float: right; */ 
     font-size: 300%; 
 }
+
+*{
+    background-color: #000000;
+  }
