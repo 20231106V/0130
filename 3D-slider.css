@@ -26,19 +26,18 @@
     height:300px;
     width:300px;
     
-    -webkit-transform-style: preserve-3d;
-    -webkit-animation: spin 30s infinite linear;
+   transform-style: preserve-3d;
+   animation: spin 30s infinite linear;
     /* display: table-cell; */
     vertical-align: middle;
-    
-    
-    
-    
+  
+    /* perspective: 1200px; */
+  
    }
 
-   img {
-    max-width: 100%; /* 使图像不超过其容器的宽度 */
-    height: auto; /* 保持图像的纵横比 */
+  img {
+    max-width: 100%; 
+    height: auto;
 }
   
   .wrapper:hover {
@@ -53,6 +52,9 @@
     color:#fff;
     font-size:10em;
     text-align:center;
+
+    /* transform-origin: top left;  */
+    /* 移動轉軸到左上角 */
   }
   
   .plane p {
@@ -97,4 +99,7 @@
   
   .p8 {
   -webkit-transform: rotateY(315deg) translateZ(250px);
+  }
+  *{
+    background-color: #000000;
   }

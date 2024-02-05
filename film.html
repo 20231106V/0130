@@ -16,7 +16,12 @@
             <div class="header">
                 <div id="V"><a href="index.html">YWV0495629240</a></div>
                 <div id="footer">&copy; 2024 YWV</div>
-                <div id="sound">sound</div>
+                <!-- <div id="sound">sound</div> -->
+                <div id="sound" onclick="toggleAudio()">sound
+                    <audio id="myAudio" preload="auto">
+                        <source src="./audio/Frank Schlimbach - Tortured Minds of Evil.mp3" type="audio/mp3">
+                    </audio>
+                </div>
             </div>
 
             <div class="nav">
@@ -142,6 +147,20 @@
             </div>
         </section>
     </main>
+
+
+<script>
+
+    function toggleAudio() {
+        var audio = document.getElementById("myAudio");
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+    
+    </script>
 
 </body>
 

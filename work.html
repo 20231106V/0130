@@ -112,7 +112,12 @@
     <div class="header">
         <div id="V"><a href="index.html">YWV0495629240</a></div> 
         <div id="footer">&copy; 2024 YWV</div>  
-        <div id="sound">sound</div> 
+        <!-- <div id="sound">sound</div>  -->
+        <div id="sound" onclick="toggleAudio()">sound
+            <audio id="myAudio" preload="auto">
+                <source src="./audio/Jozeque - Rebreath.mp3" type="audio/mp3">
+            </audio>
+        </div>
     </div>
 
     <div class="nav">
@@ -163,7 +168,7 @@
         
         <li class="c"><a href=""><img src="./image/S__71303174.jpg" alt=""></a></li>
         <!-- <li class="b"><a href=""><img src="./video/Bitan.m4v" alt=""></a></li> -->
-        <li class="b"><a href=""><video src="./video/Bitan.m4v" loop autoplay =""></a></li>
+        <li class="b"><a href=""><video src="./video/Bitan.m4v" loop autoplay muted=""></a></li>
         <li class="a"><a href=""><img src="./image/1010-BOO15715 T.jpg" alt=""></a></li> 
         <li class="c"><a href=""><img src="./image/01165132.jpg" alt=""></a></li>
         <li class="a"><a href=""><img src="./image/01165125.jpg" alt=""></a></li>
@@ -483,6 +488,20 @@
 	
 	//It also supports NodeList
 	VanillaTilt.init(document.querySelectorAll(".moodboard"));
+    </script>
+
+
+<script>
+
+    function toggleAudio() {
+        var audio = document.getElementById("myAudio");
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    }
+    
     </script>
 
 </body>
