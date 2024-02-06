@@ -25,10 +25,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	/* display: block; */
-}
+	display: block;
+} */
 
 ol, ul {
 	list-style: none;
@@ -90,12 +90,14 @@ body {
 
 .header{
     position: fixed;
-    bottom: .1px;
-    right: .1px;
+    bottom: 10px;
+    right: 10px;
     border: none;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     padding: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
     width: 127px;
     cursor:cell;
@@ -125,7 +127,7 @@ body {
 #footer{
     position: absolute;
     bottom: 0;
-    right: 10px;
+    right: 0;
     transform: rotate(-270deg);
     margin-bottom: 60px;
     
@@ -152,7 +154,7 @@ body {
 }
 .nav{
     /* float: right; */ 
-    font-size: 320%; 
+    font-size: 300%; 
     line-height: 1;
     margin-bottom: 1;
 }
@@ -198,7 +200,7 @@ a{
 
 .contact a:hover{
     background: linear-gradient(to right, rgb(165, 163, 163), grey);
-    -webkit-background-clip: text; /* 將文字內容裁剪為背景 */
+    background-clip: text; /* 將文字內容裁剪為背景 */
     color: transparent; /* 將文字設為透明，只顯示背景 */
    
 }
@@ -223,4 +225,58 @@ a{
     z-index: -1;
     width: 100%;
     height: 100%;
+}
+
+
+a {
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: none;
+}
+.cursor,
+.cursor2,
+.cursor3{
+	position: fixed;
+	border-radius: 50%;	
+	transform: translateX(-50%) translateY(-50%);
+	pointer-events: none;
+	left: -100px;
+	top: 50%;
+	mix-blend-mode: difference;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+.cursor{
+	background-color: #fff;
+	height: 0;
+	width: 0;
+	z-index: 99999;
+}
+.cursor2,.cursor3{
+	height: 36px;
+	width: 36px;
+	z-index:99998;
+	-webkit-transition:all 0.3s ease-out;
+	transition:all 0.3s ease-out
+}
+.cursor2.hover,
+.cursor3.hover{
+	-webkit-transform:scale(2) translateX(-25%) translateY(-25%);
+	transform:scale(2) translateX(-25%) translateY(-25%);
+	border:none
+}
+.cursor2{
+	border: 2px solid #fff;
+	box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+}
+.cursor2.hover{
+	background: rgba(255,255,255,1);
+	box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 1200px){
+	.cursor,.cursor2,.cursor3{
+		display: none
+	}
 }

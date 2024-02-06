@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cursor.css">
 </head>
 <body>
    <div class="container">
@@ -32,8 +33,12 @@
     <video preload="auto"src="./video/final.mp4" autoplay muted loop id="video1"></video>
    </div>
 
+   <div class='cursor' id="cursor"></div>
+   <div class='cursor2' id="cursor2"></div>
+   <div class='cursor3' id="cursor3"></div>
 
-   <script>
+<!-- 預先載入 -->
+<script>
     // 使用 JavaScript 預先載入影片
     function preloadVideo(videoId) {
         var video = document.getElementById(videoId);
@@ -47,6 +52,7 @@
     preloadVideo("video1");
 </script>
 
+<!-- audio -->
 <script>
 
 function toggleAudio() {
@@ -59,6 +65,84 @@ function toggleAudio() {
 }
 
 </script>
+
+<script src="/jquery.min.js"></script>
+<!-- 滑鼠 -->
+<script>
+
+
+    /* Please ❤ this if you like it! */
+    
+    
+    (function($) { "use strict";
+            
+            //Page cursors
+        
+            document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+                t.style.left = n.clientX + "px", 
+                t.style.top = n.clientY + "px", 
+                e.style.left = n.clientX + "px", 
+                e.style.top = n.clientY + "px", 
+                i.style.left = n.clientX + "px", 
+                i.style.top = n.clientY + "px"
+            });
+            var t = document.getElementById("cursor"),
+                e = document.getElementById("cursor2"),
+                i = document.getElementById("cursor3");
+            function n(t) {
+                e.classList.add("hover"), i.classList.add("hover")
+            }
+            function s(t) {
+                e.classList.remove("hover"), i.classList.remove("hover")
+            }
+            s();
+            for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+                o(r[a])
+            }
+            function o(t) {
+                t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+            }
+            
+            //Navigation
+        
+            var app = function () {
+                var body = undefined;
+                var menu = undefined;
+                var menuItems = undefined;
+                var init = function init() {
+                    body = document.querySelector('body');
+                    menu = document.querySelector('.menu-icon');
+                    menuItems = document.querySelectorAll('.nav__list-item');
+                    applyListeners();
+                };
+                var applyListeners = function applyListeners() {
+                    menu.addEventListener('click', function () {
+                        return toggleClass(body, 'nav-active');
+                    });
+                };
+                var toggleClass = function toggleClass(element, stringClass) {
+                    if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+                };
+                init();
+            }();
+        
+            
+            //Switch light/dark
+            
+            $("#switch").on('click', function () {
+                if ($("body").hasClass("light")) {
+                    $("body").removeClass("light");
+                    $("#switch").removeClass("switched");
+                }
+                else {
+                    $("body").addClass("light");
+                    $("#switch").addClass("switched");
+                }
+            });
+            
+        })(jQuery); 
+                </script>
+        
 
 </body>
 </html>
