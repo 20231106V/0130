@@ -27,7 +27,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	/* display: block; */
 }
 
 ol, ul {
@@ -63,12 +63,6 @@ img {
     /* width: 100%; */
 }
 
-video{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-
 
 *{
     cursor:cell;
@@ -78,6 +72,7 @@ video{
 body {
 	line-height: 1;
     margin: 0;
+    z-index: 999;
     /* overflow: hidden; */
     background: linear-gradient(to right, rgb(231, 231, 231), #ffffff);
 
@@ -90,35 +85,8 @@ body {
     color: rgb(236, 4, 4);
     margin: 20px;
     font-family: 'ARCK';
+    z-index: 999;
 }
-.container video{
-    position: absolute;
-	top: 0;
-	left: 0;
-    z-index: -1;
-	/* 
-    背景常用-1讓元素往後退 */
-
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
-/* .header{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    .flex-direction: column;
-    .align-items: center;
-    height: 100%;
-    width: 127px;
-    cursor:cell;
-    background-color: #000000;
-    
-} */
 
 .header{
     position: fixed;
@@ -131,8 +99,6 @@ body {
     height: 100%;
     width: 127px;
     cursor:cell;
-    background-color: #000000;
-   
     
 }
 
@@ -211,8 +177,8 @@ a{
 .content{
     width: 50%;
     position: fixed;
-    top: 25%;
-    right:0;
+    top: 30%;
+    right:10%;
     margin: 10px;
     font-size: x-small;
     margin-right: 5%;
@@ -225,7 +191,7 @@ a{
     padding-right: 20%;
     
 }
-.contact a {
+.cont020act a {
     transition: color 0.3s ease;
     transition: color 0.3s ease-out
 }
@@ -249,4 +215,12 @@ a{
     padding-right: 100px;
     /* border: 5px solid red; */
 
+}
+#defaultCanvas0{
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }

@@ -9,14 +9,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
     
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./aboutstyle.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
     <link rel="stylesheet" href="./aboutstyle.css">
 
-    <style>
+    <!-- <style>
         .mySlides {
             display: none;
         }
-    </style>
+    </style> -->
 </head>
 
 
@@ -46,7 +49,7 @@
         </div>
 
         <section id="about">
-            <div class="PIC">
+            <!-- <div class="PIC">
                 <img class="mySlides" src="./image/022511594.jpg">
                 <img class="mySlides" src="./image/022511613 T.jpg">
                 <img class="mySlides" src="./image/022512216.jpg">
@@ -62,13 +65,10 @@
                 <img class="mySlides" src="./image/S__84672617.jpg">
                 <img class="mySlides" src="./image/S__84672623.jpg">
                 <img class="mySlides" src="./image/首IMG_7809.jpg">
-            </div>
+            </div> -->
 
             <div class="content">
-                <div class="contact">
-                    <p>eMail<a href="mailto:hly.460320@gmail.com">hly.460320@gmail.com</a></p>
-                    <p>Instagram<a href="https://www.instagram.com/ywvotography?igsh=MmVlMjlkMTBhMg==" target="_blank">@ywvotography</a></p>
-                </div>
+                
 
                 <div class="commission">
                     <p>commission</p>
@@ -86,11 +86,44 @@
                     <p>AWARD | FAPA | Destiny | 11th, April, 2021 | London</p>
                     <p>AWARD | FAPA | Indescribable dialogue | 11th, April, 2021 | London</p>
                     <p>HONORABLE MENTION | ND awards | A moment of eternity | 22th, Nov, 2020</p>
-
+                </div>
+                <div class="contact">
+                    <p>eMail<a href="mailto:hly.460320@gmail.com">hly.460320@gmail.com</a></p>
+                    <p>Instagram<a href="https://www.instagram.com/ywvotography?igsh=MmVlMjlkMTBhMg==" target="_blank">@ywvotography</a></p>
                 </div>
             </div>
 
         </section>
+
+        <script>
+            var r = 1;
+          
+            function setup() {
+              createCanvas(windowWidth, windowHeight);
+                stroke(240,60);
+              noFill();
+              cursor(CROSS);
+              background(0);
+            }
+          
+            function draw() {
+          
+              var scl = 0.001;
+          
+              translate(width/2, height/2);
+          
+              beginShape();
+              for(var i = 0; i < TWO_PI; i+= PI*0.001){
+          
+                var n = noise(23423+ cos(i)*r*scl, -123 + sin(i)*r*scl);
+          
+                vertex(cos(i)*r*n,sin(i)*r*n);
+              }
+              endShape();
+          
+              r++;
+            }</script>
+        
 
         
 
