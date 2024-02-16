@@ -176,3 +176,7 @@ a{
     background-color: #000000;
   } */
 
+.nav:hover ul li a{
+    transform: scale(1.2);  /* 1.2倍放大 */
+    transition: transform 0.3s ease;  /* 添加過渡效果 */
+}

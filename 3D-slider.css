@@ -104,3 +104,9 @@
   *{
     background-color: #000000;
   }
+
+  .plane:hover img {
+    transition: 0.8s ease;  /* 添加過渡效果 */
+    transform: scale(1.4) translateZ(300px);  /* 1.2倍放大並向前移動 50 像素 */
+    transform-origin: center center;  /* 設置變換原點為圖片中心 */
+}
