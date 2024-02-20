@@ -1,7 +1,7 @@
 
 .moodboard{
-    transform-style: preserve-3d;
-    transform: translateZ(50px);
+    /* transform-style: preserve-3d;
+    transform: translateZ(50px); */
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -96,6 +96,6 @@ video{
     height: auto;
     
    }
-*{
+/* *{
     background-image: url();
-}
+} */
