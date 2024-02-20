@@ -113,10 +113,10 @@ a:hover {
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .cursor,
     .cursor2,
     .cursor3 {
         display: none;
     }
-}
+} */
