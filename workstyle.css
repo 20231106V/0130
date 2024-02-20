@@ -129,7 +129,7 @@ body {
     right: -10px;
     transform: rotate(-270deg);
     margin-top: 88px;
-
+    transition:0.3s ease, color 0.3s ease; /* 添加 color 的過渡效果 */
     
     /* margin: 460%; 調整上下文字之間的間距 */
     /* margin-top: 90px;
@@ -142,6 +142,16 @@ body {
     left: 10px;
     font-size: large; */
 }
+
+#V:hover{
+
+    transition:  0.3s ease;
+    transform: translateY(-5px) scale(1.1) rotate(-270deg); /* 同時向上位移並進行縮放 */
+    border-color: linear-gradient(to right, #c0c0c0, #808080);
+    color: #c0c0c0; /* 修改懸停時文字的顏色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加立體效果的 text-shadow */
+}
+
 #footer{
     position: absolute;
     bottom: 0;
@@ -169,7 +179,17 @@ body {
     /* border-width: 3px ; */
     border-top: 10px;
     padding-inline: 2px;
+    transition:0.3s ease, color 0.3s ease; /* 添加 color 的過渡效果 */
     
+}
+
+#sound:hover {
+
+    transition:  0.3s ease;
+    transform: translateY(-5px) scale(1.2); /* 同時向上位移並進行縮放 */
+    border-color: linear-gradient(to right, #c0c0c0, #808080);
+    color: #c0c0c0; /* 修改懸停時文字的顏色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加立體效果的 text-shadow */
 }
 .nav{
     /* float: right; */ 
@@ -179,5 +199,11 @@ a{
     color: rgb(236, 4, 4);
     margin-left: 20px;
     /* margin-top: 20px; */
+}
+a:hover {
+
+    border-color: linear-gradient(to right, #c0c0c0, #808080);
+    color: #c0c0c0; /* 修改懸停時文字的顏色 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加立體效果的 text-shadow */
 }
 

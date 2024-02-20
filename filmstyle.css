@@ -119,7 +119,15 @@ body {
     right: 0;
     transform: rotate(-270deg);
     margin-top: 92px;
-    
+    transition:0.3s ease, color 0.3s ease; /* 添加 color 的過渡效果 */
+}
+#V:hover{
+
+  transition:  0.3s ease;
+  transform: translateY(-5px) scale(1.1) rotate(-270deg); /* 同時向上位移並進行縮放 */
+  border-color: linear-gradient(to right, #c0c0c0, #808080);
+  color: #c0c0c0; /* 修改懸停時文字的顏色 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加立體效果的 text-shadow */
 }
 #footer{
     position: absolute;
