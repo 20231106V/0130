@@ -196,19 +196,63 @@ a{
 .content{
     width: 50%;
     position: fixed;
-    top: 30%;
+    top: 40%;
     right:10%;
     margin: 10px;
     font-size: x-small;
-    margin-right: 5%;
+    /* margin-right: 5%; */
     /* border: 5px solid red; */
 }
+@media (max-width:768px) {
+    .content{
+        width: 50%;
+        position: fixed;
+        top: 40%;
+        right:10%;
+        margin: 10px;
+        font-size: x-small;
+        margin-right: 20%;}
+}
+@media (max-width:375px) {
+    .content{
+        width: 50%;
+        position: fixed;
+        top: 40%;
+        right:10%;
+        margin: 10px;
+        font-size: x-small;
+        margin-right: 20%;}
+}
+
 .contact{
     margin: 30px;
     display: flex;
     justify-content: space-between;
     padding-right: 20%;
     
+}
+@media (max-width:768px) {
+    .contact{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 20%;
+        
+    }
+    .contact p{
+        margin: 1px;
+    }
+}
+@media (max-width:375px) {
+    .contact{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 20%;   
+    }
+    .contact p{
+        margin: 1px;
+    }
 }
 .cont020act a {
     transition: color 0.3s ease;
