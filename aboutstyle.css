@@ -203,12 +203,12 @@ a{
     /* margin-right: 5%; */
     /* border: 5px solid red; */
 }
-/* @media (max-width:768px) {
+@media (max-width:768px) {
     .content{
         width: 50%;
         position: fixed;
         top: 40%;
-        right:10%;
+        right:30%;
         margin: 10px;
         font-size: x-small;
         margin-right: 20%;}
@@ -218,11 +218,11 @@ a{
         width: 50%;
         position: fixed;
         top: 40%;
-        right:10%;
+        right:50%;
         margin: 10px;
         font-size: x-small;
         margin-right: 20%;}
-} */
+}
 
 .contact{
     margin: 30px;
@@ -238,6 +238,7 @@ a{
         flex-direction: column;
         padding-right: 20%;
         
+        
     }
     .contact p{
         margin: 1px;
@@ -248,7 +249,7 @@ a{
         margin: 30px;
         display: flex;
         flex-direction: column;
-        padding-right: 20%;   
+        padding-right: 10%;   
     }
     .contact p{
         margin: 1px;
@@ -263,7 +264,6 @@ a{
     background: linear-gradient(to right, rgb(165, 163, 163), grey);
     background-clip: text; /* 將文字內容裁剪為背景 */
     color: transparent; /* 將文字設為透明，只顯示背景 */
-   
 }
 .commission{
     margin: 30px;
