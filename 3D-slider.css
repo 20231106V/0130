@@ -57,6 +57,19 @@
     /* transform-origin: top left;  */
     /* 移動轉軸到左上角 */
   }
+
+  @media (max-width:375px) {
+    .plane {
+      position:absolute;
+      width:160px;
+      height:200px;
+      background:rgba(0,0,0,0.6);
+      color:#fff;
+      font-size:10em;
+      text-align:center;
+  
+    }
+}
   
   .plane p {
     display:none;

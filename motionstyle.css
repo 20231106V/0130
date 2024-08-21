@@ -79,6 +79,7 @@ body {
     color: rgb(236, 4, 4);
     margin: 20px;
     font-family: 'ARCK';
+    
 }
 
 .header{
@@ -93,7 +94,8 @@ body {
     align-items: center;
     height: 100%;
     width: 127px;
-    cursor:cell;
+    cursor:cell; 
+    
     
 
     /* display: block; */
@@ -176,6 +178,7 @@ body {
 
 *{
     background-color: #000000;
+    z-index: 1;
 }
 
 a{
