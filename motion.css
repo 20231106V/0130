@@ -2,10 +2,15 @@
 	font-family: 'ARCK';
 	src: url('./Archivo_Black/ArchivoBlack-Regular.ttf');
 }
+.motion{
+    
+}
 
 .motion-box1{
     display: flex;
     margin:30px;
+    justify-content: space-between; /* 確保子元素在容器中左右對齊 */
+    
 
 }
 @media (max-width:768px) {
@@ -13,6 +18,8 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        
+        
     }
 }
 .content1{
@@ -37,7 +44,7 @@
 
 .img1 img{
     display: block;
-    width: 100%;
+    width: 100vh;
     height: auto;
     /* border: 1px solid rgb(0, 255, 153); */
     max-width: 100%; 
@@ -110,8 +117,9 @@
 
 .motion-box2{
     margin-top: 5%;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     margin:25px; 
+    justify-content: space-between; /* 確保子元素在容器中左右對齊 */
 }
 @media (max-width:768px) {
     .motion-box2{
