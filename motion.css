@@ -6,26 +6,27 @@
 .motion-box1{
     display: flex;
     margin:30px;
-    /* border: 5px solid red; */
+
 }
 @media (max-width:768px) {
     .motion-box1{
         display: flex;
         flex-direction: column;
-        /* margin:30px; */
         width: 100%;
     }
 }
 .content1{
-    /* border: 5px solid red; */
+    position: relative; /* 確保子元素可以絕對定位 */
     flex-direction: column;
-    display: flex;  
+    display: flex;
+    
 }
 
 .text1{
     /* border: 1px solid rgb(0, 213, 255); */
     display: block;
     margin-top: auto;
+    margin-top: 10%;
     margin-bottom: 22%;
     margin-right: 10%; 
     color: red;
@@ -45,7 +46,9 @@
 
 .img1{
     display: flex;
-    justify-content: left;
+    justify-content: flex-start; /* 調整圖片在 img1 中的對齊方式 */
+    margin-top: auto; /* 將 img1 推到 content1 的底部 */
+    width: 100%; /* 圖片寬度與容器一致 */
     width: 25vh;
     max-width: fit-content;
     height: auto;
@@ -60,14 +63,16 @@
 @media (max-width:768px) {
     .img1{
     display: flex;
-    
+    width: 32%;
+    max-width: fit-content;
+    height: auto;
     }
 }
 
 .video1{
-    /* border: 5px solid rgb(0, 26, 255); */
     /* width: 100vh; */
     height: auto;
+    max-width: 100%;
 
     display: flex;
     justify-content: flex-end;
@@ -77,7 +82,7 @@
 .video1 video{
     /* float: right; */
     width: 100vw;
-    max-width: 700px;
+    max-width: 800px;
 
 
     
@@ -104,10 +109,16 @@
 }
 
 .motion-box2{
-    margin:25px;
     margin-top: 5%;
-    /* border: 5px solid red; */
-    padding-right: 50px;
+    padding-right: 20px;
+    margin:25px; 
+}
+@media (max-width:768px) {
+    .motion-box2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .content2{
@@ -116,33 +127,71 @@
     align-items: flex-end;
     
 }
+@media (max-width:768px) {
+    .content2{
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
 
 .img2 img, .img2-1 img{
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 100%; 
-    max-height: 100%;  
-     /* border: 1px solid rgb(0, 255, 153); */ 
+    width: 80%; /* 讓圖片寬度跟隨容器的寬度 */
+    height: auto; /* 讓圖片高度自動調整以保持比例 */
+    object-fit: cover; /* 確保圖片內容適合容器 */
+    
 }
 
 .img2, .img2-1{
     width: 28vh;
     max-width: fit-content;
     height: auto;
-    /* margin-top: auto; */
     margin-bottom: 0;
-    /* border: 5px solid rgb(255, 0, 251); */
     object-fit: cover;
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-    /* padding-left: 5%; */
 
 }
+@media (max-width:768px) {
+    .img2{
+        width: 100%; /* 讓容器寬度填滿父容器 */
+        max-width: 100%; /* 確保最大寬度不超過100% */
+        /* width: 50vh;
+        max-width: fit-content; */
+        height: auto;
+        margin-bottom: 0;
+        /* object-fit: cover; */
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+    
+    }
+}
+
+@media (max-width:768px) {
+    .img2-1{
+        width: 100%; /* 讓容器寬度填滿父容器 */
+        max-width: 100%; /* 確保最大寬度不超過100% */
+        /* width: 50vh;
+        max-width: fit-content; */
+        height: auto;
+        margin-bottom: 0;
+        /* object-fit: cover; */
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+    
+    }
+}
+
+
+
 .img2-1{
     justify-content: space-between;
 }
+
+
 .text2{
     
     /* border: 1px solid rgb(0, 213, 255); */
@@ -158,6 +207,3 @@
     /* border: 5px solid red; */
     display: flex;
 }
-*{
-    /* background-color: #000000; */
-  }
