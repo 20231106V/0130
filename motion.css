@@ -2,17 +2,12 @@
 	font-family: 'ARCK';
 	src: url('./Archivo_Black/ArchivoBlack-Regular.ttf');
 }
-.motion{
-    
-}
 
 .motion-box1{
     display: flex;
     margin:30px;
     justify-content: space-between; /* 確保子元素在容器中左右對齊 */
     margin-bottom: 10%;
-    
-
 }
 @media (max-width:768px) {
     .motion-box1{
@@ -71,7 +66,7 @@
 @media (max-width:768px) {
     .img1{
     display: flex;
-    width: 32%;
+    width: 35%;
     max-width: fit-content;
     height: auto;
     }
@@ -207,12 +202,176 @@
     /* border: 1px solid rgb(0, 213, 255); */
     display: block;
     margin-top: auto;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     /* margin-right: 10%;  */
     color: red;
     font-family: 'ARCK';
     font-size: x-small;
 }
+
+.motion-box3{
+    /* border: 1px solid rgb(0, 213, 255); */
+    display: flex;
+    margin:30px;
+    justify-content: space-between; /* 確保子元素在容器中左右對齊 */
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+@media (max-width:768px) {
+    .motion-box3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        
+    }
+}
+.content3{
+    position: relative; /* 確保子元素可以絕對定位 */
+    flex-direction: column;
+    display: flex;
+    
+}
+@media (max-width:768px) {
+    .content3{
+        position: relative; /* 確保子元素可以絕對定位 */
+        flex-direction: column;
+        display: flex;
+    }
+    }
+.group3,.group3-1{
+    display: flex;
+}
+
+.group3{
+     /* border: 1px solid rgb(0, 213, 255); */
+}
+@media (max-width:768px) {
+    .group3,.group3-1{
+        display: flex;
+    }
+}
+.text3{
+    /* border: 1px solid rgb(0, 213, 255); */
+    display: block;
+    margin-top: auto;
+    margin-bottom: 15%;
+    margin-right: 10%;
+    /* margin-top: 15%;
+    margin-bottom: 25%;
+    margin-right: 10%;  */
+    color: red;
+    font-family: 'ARCK';
+    font-size: x-small;
+}
+@media (max-width:768px) {
+    .text3{
+        /* border: 1px solid rgb(0, 213, 255); */
+        display: block;
+        justify-content: center;
+        margin-top: 20%; 
+        margin-bottom: 12%;
+        margin-right: 10%; 
+        color: red;
+        font-family: 'ARCK';
+        font-size: x-small;
+        }
+        
+    }
+
+.img3 img{
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+    /* border: 1px solid rgb(0, 255, 153); */
+    max-width: 100%; 
+    max-height: 100%;   
+}
+
+.img3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 調整圖片在 img1 中的對齊方式 */
+    margin-top: auto; /* 將 img1 推到 content1 的底部 */
+    width: 100%; /* 圖片寬度與容器一致 */
+    width: 27vh;
+    max-width: fit-content;
+    height: auto;
+    /* border: 5px solid rgb(255, 0, 251); */
+    border-right: 20px;
+    object-fit: cover;
+    margin-bottom: 2px;
+
+    /* overflow: hidden; */
+    /* padding-top: 35%; */
+}
+@media (max-width:768px) {
+    .img3{
+    display: flex;
+    width: 45%;
+    max-width: fit-content;
+    height: auto;
+    }
+}
+
+.img3-1 img{
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+    /* border: 1px solid rgb(0, 255, 153); */
+    max-width: 100%; 
+    max-height: 100%;   
+}
+
+.img3-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* 調整圖片在 img1 中的對齊方式 */
+    margin-top: auto; /* 將 img1 推到 content1 的底部 */
+    margin-left: auto;
+    width: 100%; /* 圖片寬度與容器一致 */
+    width: 30vh;
+    max-width: fit-content;
+    height: auto;
+    /* border: 5px solid rgb(255, 0, 251); */
+    border-right: 20px;
+    object-fit: cover;
+    margin-bottom: 2px;
+
+    /* overflow: hidden; */
+    /* padding-top: 35%; */
+}
+@media (max-width:768px) {
+    .img3-1{
+    display: flex;
+    width: 115%;
+    max-width: fit-content;
+    height: auto;
+    }
+}
+
+.video3{
+    /* width: 100vh; */
+    height: auto;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+}
+
+.video3 video{
+    /* float: right; */
+    width: 100vw;
+    max-width: 800px;
+
+
+    
+}
+
 .screenshot{
     /* border: 5px solid red; */
     display: flex;
