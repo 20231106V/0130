@@ -10,6 +10,7 @@
     display: flex;
     margin:30px;
     justify-content: space-between; /* 確保子元素在容器中左右對齊 */
+    margin-bottom: 10%;
     
 
 }
@@ -18,7 +19,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        
+        margin-bottom: 10%;
         
     }
 }
@@ -126,6 +127,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        
     }
 }
 
@@ -144,7 +146,7 @@
 }
 
 .img2 img, .img2-1 img{
-    width: 80%; /* 讓圖片寬度跟隨容器的寬度 */
+    width: 100%; /* 讓圖片寬度跟隨容器的寬度 */
     height: auto; /* 讓圖片高度自動調整以保持比例 */
     object-fit: cover; /* 確保圖片內容適合容器 */
     
