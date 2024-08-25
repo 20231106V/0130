@@ -94,7 +94,8 @@ body {
     align-items: center;
     height: 100%;
     width: 127px;
-    cursor:cell; 
+    cursor:cell;
+    background-color: transparent; /* 完全透明背景 */
     
     
 
