@@ -34,8 +34,11 @@
     margin-right: 10%; 
     color: red;
     font-family: 'ARCK';
-    font-size: x-small;
+    font-size: medium;
     
+}
+.text1 p, .text2 p, .text3 p{
+   font-size: x-small;
 }
 
 .img1 img{
@@ -206,7 +209,7 @@
     /* margin-right: 10%;  */
     color: red;
     font-family: 'ARCK';
-    font-size: x-small;
+    font-size: medium;
 }
 
 .motion-box3{
@@ -244,9 +247,6 @@
     display: flex;
 }
 
-.group3{
-     /* border: 1px solid rgb(0, 213, 255); */
-}
 @media (max-width:768px) {
     .group3,.group3-1{
         display: flex;
@@ -263,7 +263,7 @@
     margin-right: 10%;  */
     color: red;
     font-family: 'ARCK';
-    font-size: x-small;
+    font-size: medium;
 }
 @media (max-width:768px) {
     .text3{
@@ -275,7 +275,7 @@
         margin-right: 10%; 
         color: red;
         font-family: 'ARCK';
-        font-size: x-small;
+        font-size: medium;
         }
         
     }
