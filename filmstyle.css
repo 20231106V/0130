@@ -182,23 +182,17 @@ section {
     height: auto;
   }
 
+  
   .project-box {
-
     width: 100vw;
     height: auto;
     max-height: 600px;
     display: flex;
     position: relative;
+    padding-top: 10%;
     /* border: 1px solid red; */
   }
 
-  /* .project-pic{
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 10px;
-  } */
   
   .project-text1, .project-text3, .project-text5 {
     display: flex;
@@ -207,37 +201,41 @@ section {
     flex: 1;
     height: auto;
     z-index: 2; /* 確保文字在影片上方 */
+    /* order: 1; */
     /* box-shadow: 3px 3px 8px rgba(0, 0, 0, .1); */
-    border: 1px solid red;
+    /* border: 1px solid red; */
   
     
   }
   .project-text1 h3, .project-text3 h3, .project-text5 h3{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 60%;
-    margin: 30px;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* padding-right: 60%; */
+    /* margin: 30px; */
+    padding-left: 10%;
+    padding-bottom: 5%;
     color: red;
     z-index: 999;
     font-weight: 700;
-    border: 1px solid red;
+   z-index: 2;
+    /* border: 1px solid red; */
   }
   .project-text1 p, .project-text3 p, .project-text5 p{
     display: block;
-    margin-left: auto;
-    margin-top: 30px;
+    padding-left: 10%;
+    padding-top: 5%;
     color: red;
     font-weight: 400;
     z-index: 999;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* overflow: hidden; */
-    padding-inline:10%;
+    /* padding-inline:10%; */
   }
   .horizontal-line1, .horizontal-line3, .horizontal-line5{
     display: block;
-    margin-left: auto;
+    /* margin-left: auto; */
     border-top:  1px solid red;
-    width: 400px;
+    width: 500px;
   }
   .project-text2, .project-text4 {
     display: flex;
@@ -246,72 +244,29 @@ section {
     flex: 1;
     height: auto;
     font-weight: 700;
+    order: 1;
     /* box-shadow: -3px -3px 8px rgba(0, 0, 0, .1); */
     z-index: 999;
   }
 
 
-  @media (max-width:768px) {
-
-    .project-box {
-
-      /* width: 100vw;
-      height: 100vh;
-      max-height: 600px; */
-      
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-      /* border: 1px solid rgb(0, 213, 255); */
-    }
-    .project-text2, .project-text4{
-      /* height: auto; */
-      padding-right: 30%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border: 1px solid rgb(0, 213, 255);
-      order: 1;
-    }
-
-    .video1,.video2,.video3,.video4,.video5{
-      order: 0;
-    }
   
-}
-
-
-  @media (max-width:768px) {
-    .project-text1, .project-text3, .project-text5{
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      height: auto;
-      padding-right: 30%;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border: 1px solid rgb(0, 213, 255);
-      z-index: 2; /* 確保文字在影片上方 */
-  }
-}
 
   .project-text2 h3, .project-text4 h3{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 312px;
-    margin: 30px;
+    padding-left: 10%;
+    padding-bottom: 5%;
     color: red;
     z-index: 999;
   }
 
   .project-text2 p, .project-text4 p{
+    padding-left: 10%;
+    padding-top: 5%;
     display: block;
-    margin-left: auto;
-    margin-top: 30px;
     color: red;
     font-weight: 400;
     z-index: 999;
-    padding-right: 38px;
+    /* padding-right: 38px; */
     /* overflow: hidden; */
     /* padding-inline:50px; */
   }
@@ -321,7 +276,7 @@ section {
     display: block;
     margin-left: auto;
     border-top:  1px solid red;
-    width: 400px;
+    width: 500px;
   }
 
 .playButton {
@@ -346,18 +301,10 @@ section {
   
 }
 
-.video1,.video2,.video3,.video4,.video5{
-display: flex;
-width: 100vw;
-height: auto;
-object-fit: cover;
-max-width: 100%;
-margin: 10px;
-/* position: relative; */
-z-index: 1; /* 確保視頻在文字下方 */
+/* .video1,.video2,.video3,.video4,.video5{
 
 
-}
+} */
 video{
   width: 100vw;
   height: auto;
@@ -387,3 +334,99 @@ a:hover {
   color: #c0c0c0; /* 修改懸停時文字的顏色 */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加立體效果的 text-shadow */
 }
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+  .project-box {
+    width: 100vw;
+    height: auto;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+}
+
+
+@media (max-width:768px) {
+  
+  .project-text1,.project-text3,.project-text5{
+
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-weight: 700;
+    order: 1;
+    /* z-index: 999;
+    z-index: 2; */
+}
+.project-text1{
+  padding-top: 10%;
+}
+
+.project-text2, .project-text4 {
+  
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  /* flex: 1; */
+  /* height: auto; */
+  padding-top: 5%;
+  padding-bottom: 10%;
+  font-weight: 700;}
+  /* z-index: 999;} */
+
+.project-text1 h3,.project-text3 h3,.project-text5 h3{
+  padding-left: 10%;
+  padding-bottom: 5%;
+  /* z-index: 999; */
+  font-weight: 700;
+}
+
+.project-text2 h3, .project-text4 h3{
+  padding-left: 10%;
+  padding-bottom: 5%;
+  color: red;
+  /* z-index: 999; */
+}
+
+.project-text1 p,.project-text3 p, .project-text5 p{
+  display: block;
+  padding-left: 10%;
+  padding-top: 5%;
+  font-weight: 400;
+}
+
+  .project-text2 p, .project-text4 p{
+    padding-left: 10%;
+    padding-top: 5%;
+    display: block;
+    font-weight: 400;
+    /* z-index: 999; */
+  }
+
+.video1,.video2,.video3,.video4,.video5{
+  order: 1;
+}
+.horizontal-line1,.horizontal-line2,.horizontal-line3,.horizontal-line4,.horizontal-line5
+{
+  display: block;
+  margin-left: auto;
+  border-top:  1px solid red;
+  width: 100vw;
+}
+
+  }
+
+
+
+
+
+
