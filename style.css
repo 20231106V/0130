@@ -104,6 +104,7 @@ body {
     height: 100%;
     width: 127px;
     cursor:cell;
+    background-color: transparent;
     
 
     /* display: block; */
@@ -181,6 +182,8 @@ body {
 .nav{
     /* float: right; */ 
     font-size: 300%; 
+
+    
 }
 a{
     color: rgb(236, 4, 4);
