@@ -75,6 +75,7 @@ body {
     z-index: 999;
     /* overflow: hidden; */
     background: linear-gradient(to right, rgb(231, 231, 231), #ffffff);
+   
 
     font-family:
 	/*西文*/ -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
@@ -86,6 +87,7 @@ body {
     margin: 20px;
     font-family: 'ARCK';
     z-index: 999;
+    
 }
 
 .header{
@@ -200,28 +202,9 @@ a{
     right:20%;
     margin: 10px;
     font-size: x-small;
+    
     /* margin-right: 5%; */
     /* border: 5px solid red; */
-}
-@media (max-width:768px) {
-    .content{
-        width: 50%;
-        position: fixed;
-        top: 40%;
-        right:30%;
-        margin: 10px;
-        font-size: x-small;
-        margin-right: 20%;}
-}
-@media (max-width:375px) {
-    .content{
-        width: 50%;
-        position: fixed;
-        top: 40%;
-        right:50%;
-        margin: 10px;
-        font-size: x-small;
-        margin-right: 20%;}
 }
 
 .contact{
@@ -232,19 +215,38 @@ a{
     
 }
 @media (max-width:768px) {
+
+    .content{
+        width: 50%;
+        position: fixed;
+        top: 40%;
+        right:30%;
+        margin: 10px;
+        /* overflow: auto; */
+        font-size: x-small;
+        margin-right: 22%;
+       }
     .contact{
         margin: 30px;
         display: flex;
         flex-direction: column;
         padding-right: 20%;
-        
+        /* border: 3px solid red; */
         
     }
     .contact p{
-        margin: 1px;
+        margin: 2px;
+    }
+
+    .exhibition{
+       
+       
+        width: 30vh;
+        height: auto;
+        /* border: 5px solid red; */
     }
 }
-@media (max-width:375px) {
+/* @media (max-width:375px) {
     .contact{
         margin: 30px;
         display: flex;
@@ -253,8 +255,9 @@ a{
     }
     .contact p{
         margin: 1px;
+    
     }
-}
+} */
 .cont020act a {
     transition: color 0.3s ease;
     transition: color 0.3s ease-out
@@ -275,7 +278,7 @@ a{
 }
 .exhibition{
     margin: 30px;
-    padding-right: 100px;
+    
     /* border: 5px solid red; */
 
 }
