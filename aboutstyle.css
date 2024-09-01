@@ -219,7 +219,7 @@ a{
     .content{
         width: 50%;
         position: fixed;
-        top: 40%;
+        top: 50%;
         right:30%;
         margin: 10px;
         /* overflow: auto; */
@@ -246,6 +246,8 @@ a{
         /* border: 5px solid red; */
     }
 }
+
+
 /* @media (max-width:375px) {
     .contact{
         margin: 30px;
