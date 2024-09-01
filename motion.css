@@ -5,7 +5,7 @@
 
 .motion-box1{
     display: flex;
-    margin:30px;
+    /* margin:30px; */
     justify-content: space-between; /* 確保子元素在容器中左右對齊 */
     margin-bottom: 10%;
 }
@@ -15,6 +15,23 @@
         flex-direction: column;
         width: 100%;
         margin-bottom: 10%;
+        
+    }
+
+    .motion-box2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10%;
+        
+    }
+    
+    .motion-box3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10%;
+        margin-top: 5%;
         
     }
 }
@@ -31,11 +48,11 @@
     margin-top: auto;
     margin-top: 10%;
     margin-bottom: 22%;
-    margin-right: 10%; 
+    /* margin-right: 10%;  */
     color: red;
     font-family: 'ARCK';
     font-size: medium;
-    
+    margin-left: 3%;
 }
 .text1 p, .text2 p, .text3 p{
    font-size: x-small;
@@ -117,17 +134,10 @@
 .motion-box2{
     margin-top: 5%;
     /* padding-right: 20px; */
-    margin:25px; 
+    /* margin:25px;  */
     justify-content: space-between; /* 確保子元素在容器中左右對齊 */
 }
-@media (max-width:768px) {
-    .motion-box2{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        
-    }
-}
+
 
 .content2{
     display: flex;
@@ -206,16 +216,17 @@
     display: block;
     margin-top: auto;
     margin-bottom: 10%;
-    /* margin-right: 10%;  */
     color: red;
     font-family: 'ARCK';
     font-size: medium;
+    margin-right: 9%;
+    margin-left: 1%;
 }
 
 .motion-box3{
     /* border: 1px solid rgb(0, 213, 255); */
     display: flex;
-    margin:30px;
+    /* margin:30px; */
     justify-content: space-between; /* 確保子元素在容器中左右對齊 */
     margin-bottom: 10%;
     margin-top: 10%;
@@ -258,9 +269,7 @@
     margin-top: auto;
     margin-bottom: 15%;
     margin-right: 10%;
-    /* margin-top: 15%;
-    margin-bottom: 25%;
-    margin-right: 10%;  */
+    margin-left: 2%;
     color: red;
     font-family: 'ARCK';
     font-size: medium;
@@ -273,10 +282,27 @@
         margin-top: 20%; 
         margin-bottom: 12%;
         margin-right: 10%; 
+        margin-left: 3%;
         color: red;
         font-family: 'ARCK';
         font-size: medium;
+        
         }
+
+        .text2{
+            /* border: 1px solid rgb(0, 213, 255); */
+            display: block;
+            justify-content: center;
+            margin-top: 20%; 
+            margin-bottom: 12%;
+            margin-right: 10%; 
+            margin-left: 3%;
+            color: red;
+            font-family: 'ARCK';
+            font-size: medium;
+            
+            }
+            
         
     }
 
