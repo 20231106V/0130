@@ -132,12 +132,6 @@
     imagesToPreload.forEach(function(imageSrc) {
         var img = new Image();
         img.src = imageSrc;
-
-        // 如果需要在圖片載入完成後執行一些操作，可以使用以下代碼
-        img.onload = function() {
-            console.log("Image preloaded: " + imageSrc);
-            // 在這裡執行你的其他操作
-        };
     });
 </script>
 
