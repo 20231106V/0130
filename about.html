@@ -39,25 +39,6 @@
             </ul>
         </div>
 
-        <!-- <section id="about"> -->
-            <!-- <div class="PIC">
-                <img class="mySlides" src="./image/022511594.jpg">
-                <img class="mySlides" src="./image/022511613 T.jpg">
-                <img class="mySlides" src="./image/022512216.jpg">
-                <img class="mySlides" src="./image/022512688 T.jpg">
-                <img class="mySlides" src="./image/02276312.jpg">
-                <img class="mySlides" src="./image/1010-BOO15710 V.jpg">
-                <img class="mySlides" src="./image/1010-BOO15715 T.jpg">
-                <img class="mySlides" src="./image/1010-BOO15743 V.jpg">
-                <img class="mySlides" src="./image/1010-BOO15761 T.jpg">
-                <img class="mySlides" src="./image/DSCF8160.jpg">
-                <img class="mySlides" src="./image/igboo.jpg">
-                <img class="mySlides" src="./image/IMG_8460-T.jpg">
-                <img class="mySlides" src="./image/S__84672617.jpg">
-                <img class="mySlides" src="./image/S__84672623.jpg">
-                <img class="mySlides" src="./image/首IMG_7809.jpg">
-            </div> -->
-
             <div class="content">
                 <div class="contact">
                     <p>eMail<a href="mailto:hly.460320@gmail.com">hly.460320@gmail.com</a></p>
@@ -70,10 +51,6 @@
                     <p>AWARD | FAPA | Indescribable dialogue | 11th, April, 2021 | London</p>
                     <p>HONORABLE MENTION | ND awards | A moment of eternity | 22th, Nov, 2020</p>
                 </div>
-                <!-- <div class="contact">
-                    <p>eMail<a href="mailto:hly.460320@gmail.com">hly.460320@gmail.com</a></p>
-                    <p>Instagram<a href="https://www.instagram.com/ywvotography?igsh=MmVlMjlkMTBhMg==" target="_blank">@ywvotography</a></p>
-                </div> -->
             </div>
 
         </section>
@@ -183,51 +160,6 @@
           
               r++;
             }</script>
-              
-        <!-- slider -->
-        <!-- <script>
-            var myIndex = 0;
-            var x = document.getElementsByClassName("mySlides");
-            var auto;
-            carousel();
-
-            function carousel() {
-                var i;
-
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                var auto = setTimeout(function () { carousel(); }, 200); // Change image every 2 seconds
-                console.log(myIndex);
-            }
-
-            function prev() {
-                clearTimeout(auto);
-                console.log(myIndex);
-
-                x[myIndex - 1].style.display = "none";
-
-                if (myIndex == 1) {
-                    myIndex == x.length;
-                    x[myIndex].style.display = "block";
-                } else {
-                    myIndex--;
-                    x[myIndex - 1].style.display = "block";
-                    //myIndex--;
-                }
-
-                function next() {
-
-                    clearTimeout(auto);
-                    myIndex++;
-                    x[myIndex - 1].style.display = "block";
-                    myIndex++;
-                }
-            }
-        </script> -->
 
         <!-- audio -->
         <script>
@@ -247,186 +179,8 @@
             document.body.style.overflow = 'hidden';
         </script>
 
-        <!-- 紅背景動畫 -->
-        <!-- <script>
-    var r = 1;
-  
-    function setup() {
-      createCanvas(windowWidth, windowHeight);
-        stroke(240,60);
-      noFill();
-      cursor(CROSS);
-      background(0);
-    }
-  
-    function draw() {
-  
-      var scl = 0.001;
-  
-      translate(width/2, height/2);
-  
-      beginShape();
-      for(var i = 0; i < TWO_PI; i+= PI*0.001){
-  
-        var n = noise(23423+ cos(i)*r*scl, -123 + sin(i)*r*scl);
-  
-        vertex(cos(i)*r*n,sin(i)*r*n);
-      }
-      endShape();
-  
-      r++;
-    }</script>
-
-    <script>
-        // global variables - current position and full height
-        var scrollPos;
-        var totalHeight;
-        
-        
-        // P5 code 
-        function setup(){
-          var cnv = createCanvas(windowWidth, windowHeight);
-          cnv.parent('p5container');
-          noLoop();
-        }
-        
-        // redraw the circle on command using the scrollPos variable
-        
-        function sceneOne(){
-          clear( );
-                
-            //	draw a vertical line across the screen using scroll position
-            var lineX = scrollPos/(totalHeight-windowHeight)*width;
-            
-            line(lineX, 0, lineX, height);
-            
-            // draw a circle using scroll position
-          var sz = scrollPos- windowHeight;
-          var circX = scrollPos - windowHeight;
-          ellipse(circX, height/2, sz , sz );
-        }
-        
-        function windowResized(){
-          resizeCanvas(windowWidth, windowHeight);
-          sceneOne();
-        }
-        
-        
-        // Jquery document ready
-        $(document).ready(function(){
-            
-            // set the height of the page when it is ready
-            totalHeight = $(document).height();
-            
-            // set inital position of things
-            $("#three").css('opacity', 0 );
-            $("#three").css('top', 240 );
-            $("#one").css('top', 120 );
-            $("#two").css("top", 10000);
-        
-          $(window).scroll(function() {
-        
-            // get the scrolling position from top
-            scrollPos = $(window).scrollTop();
-        
-            // assign properties according to scroll position
-            $("#pos").html(scrollPos);
-            $("#one").css("left", scrollPos);
-            $("#two").css("top", windowHeight - scrollPos);
-        
-                // assign properties according to scroll position using conditions
-            if(scrollPos > windowHeight && scrollPos < windowHeight*2){
-                    // only on the "second page"
-              var threeAlpha = (scrollPos - windowHeight)/ windowHeight;
-              $("#three").css('opacity', threeAlpha );
-            }
-                
-                if(scrollPos < windowHeight || scrollPos > windowHeight*4){
-                    $("#three").css('opacity', 0 );
-                }
-        
-            // update p5 only when scrolling;
-            sceneOne();
-        
-          });
-        
-        });
-        </script>
-
-        <script>
 
 
-/* Please ❤ this if you like it! */
-
-
-(function($) { "use strict";
-    
-    //Page cursors
-
-    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
-        t.style.left = n.clientX + "px", 
-        t.style.top = n.clientY + "px", 
-        e.style.left = n.clientX + "px", 
-        e.style.top = n.clientY + "px", 
-        i.style.left = n.clientX + "px", 
-        i.style.top = n.clientY + "px"
-    });
-    var t = document.getElementById("cursor"),
-        e = document.getElementById("cursor2"),
-        i = document.getElementById("cursor3");
-    function n(t) {
-        e.classList.add("hover"), i.classList.add("hover")
-    }
-    function s(t) {
-        e.classList.remove("hover"), i.classList.remove("hover")
-    }
-    s();
-    for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
-        o(r[a])
-    }
-    function o(t) {
-        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
-    }
-    
-    //Navigation
-
-    var app = function () {
-        var body = undefined;
-        var menu = undefined;
-        var menuItems = undefined;
-        var init = function init() {
-            body = document.querySelector('body');
-            menu = document.querySelector('.menu-icon');
-            menuItems = document.querySelectorAll('.nav__list-item');
-            applyListeners();
-        };
-        var applyListeners = function applyListeners() {
-            menu.addEventListener('click', function () {
-                return toggleClass(body, 'nav-active');
-            });
-        };
-        var toggleClass = function toggleClass(element, stringClass) {
-            if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
-        };
-        init();
-    }();
-
-    
-    //Switch light/dark
-    
-    $("#switch").on('click', function () {
-        if ($("body").hasClass("light")) {
-            $("body").removeClass("light");
-            $("#switch").removeClass("switched");
-        }
-        else {
-            $("body").addClass("light");
-            $("#switch").addClass("switched");
-        }
-    });
-    
-})(jQuery); 
-        </script> -->
 </body>
 
 </html>
